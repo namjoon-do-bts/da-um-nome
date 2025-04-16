@@ -12,10 +12,15 @@ public class teste : MonoBehaviour
         fusca.AtribuirNome("Fusca de Pai");
         Debug.Log("0 "+ fusca.NomeDoCarro());
         fusca.AtribuirNome("Amarelo");
-        fusca.AtribuirNumero_de_rodas(4);
+        fusca.AtribuirNumeroDeRodas(4);
         fusca.AtribuirPreco(2050.90f);
-        Debug.Log("0 "+ fusca.NomeDoCarro() +" é "+fusca.NomeDoCarro() + " te");
+        Debug.Log("0 "+ fusca.NomeDoCarro() +" é "+fusca.CorDoCarro() + " tem " + fusca.NumeroDeRodas() + " Rodas e custa " + fusca.GetPreco() + " reais." );
         gol.AtribuirNome("gol sla");
+        
+        gol.AtribuirNome("Gol do falstão");
+        gol.AtribuirCor("Verde");
+        gol.AtribuirNumeroDeRodas(4);
+        gol.AtribuirPreco(2050.90f);S
     }
     
     void Update()
@@ -23,3 +28,7 @@ public class teste : MonoBehaviour
         
     }
 }
+
+
+
+

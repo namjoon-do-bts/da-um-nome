@@ -1,16 +1,9 @@
 using UnityEngine;
 
-public class caminhao : MonoBehaviour
+public class caminhao : carro
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    private string tipodecarroceria;
+    
+    public void setTipo(string tipodecarroceria){this.tipodecarroceria = tipodecarroceria;}
+    public string tipo(){return this.tipodecarroceria;}
 }
