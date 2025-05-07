@@ -1,59 +1,91 @@
 using UnityEngine;
 
-public class Personagem 
+public class Personagem:MonoBehaviour
 {
+    [ SerializeField ]
     private string nome;
+    [ SerializeField ]
     private float energia;
+    [ SerializeField ]
     private int atk;
+    [ SerializeField ]
     private int pulo;
+    [ SerializeField ]
     private float velocidade;
+    [ SerializeField ]
     private int numeroPés;
+    [ SerializeField ]
     private int numeroMaos;
 
-    void setNome(string nome){
+    void setNome(string nome)
+    {
         this.nome = nome;
     }
 
-    public string QualONome(){
+    public string QualONome()
+    {
         return this.nome;
     }
 
-    void setEnergia (float energia){
+    public void setEnergia (float energia)
+    {
         this.energia = energia;
     }
 
-    public float QtEnergia (){return this.energia;}
+    public float QtEnergia()
+    {
+        return this.energia;
+        
+    }
 
-    void setAtaque (int atk){
+    public void setAtaque (int atk)
+    {
         this.atk = atk;
     }
 
-    public int ataque(){
+    public int ataque()
+    {
         return this.atk;
     }
-        
-    void setPulo(int pulo){this.pulo = pulo;}
 
-    public int jump(){return this.pulo;}
+    public void setPulo(int pulo)
+    {
+        this.pulo = pulo;
+    }
 
-    void setVelocidade(float velocidade){this.velocidade = velocidade;}
+    public int jump()
+    {
+        return this.pulo;
+    }
 
-    public float speed(){return this.velocidade;}
+    public void setVelocidade(float velocidade)
+    {
+        this.velocidade = velocidade;
+    }
 
-    void SetPés(int numeroPés){
+    public float speed()
+    {
+        return this.velocidade;
+    }
+
+    public void SetPés(int numeroPés)
+    {
         this.numeroPés = numeroPés;
-
     }
 
     public int pés()
     {
-        return this.numeroPés;}
+        return this.numeroPés;
+        
+    }
 
-    void SetMaos(int numeroMaos){
+    public void SetMaos(int numeroMaos)
+    {
         this.numeroMaos = numeroMaos;
     }
 
-    public int maos(){
+    public int maos()
+    {
         return this.numeroMaos;
     }
 
