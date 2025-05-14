@@ -33,7 +33,7 @@ using UnityEngine;
 
         [ SerializeField ]
         private ArmaduraDoInimigo armadura;
-        [ SerializeField ]
+        [ SerializeField ]  
         private ArmaDoInimigo arma;
 
         public void AtribuirArmadura(ArmaduraDoInimigo armadura)
