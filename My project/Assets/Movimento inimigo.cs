@@ -2,6 +2,7 @@
 using UnityEngine;
 using System;
 using Unity.VisualScripting;
+using UnityEditor.Build;
 
 public class MovimentoInimigo : MonoBehaviour
 {
@@ -11,7 +12,8 @@ public class MovimentoInimigo : MonoBehaviour
     public float raioDeVisao = 10;
     private bool naVisao = false;
     private SphereCollider _sphereCollider;
-   
+
+    public bool walk;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
