@@ -19,37 +19,37 @@ public class player : MonoBehaviour
         Vector3 posicao = transform.position;
         
        //esquerda x-
-       if (Input.GetKey(KeyCode.W))
+       if (Input.GetKey(KeyCode.S))
        {
            posicao.x = posicao.x - velocidade * Time.deltaTime;
-           transform.rotation = Quaternion.Euler(0, 0, 0);
+           transform.rotation = Quaternion.Euler(0, 90, 0);
            andando = true;
        }
 //direita x+
-        if (Input.GetKey(KeyCode.S))
+        if (Input.GetKey(KeyCode.W))
         {
             posicao.x = posicao.x + velocidade * Time.deltaTime;    
-            transform.rotation = Quaternion.Euler(0, 180, 0);
+            transform.rotation = Quaternion.Euler(0, -90, 0);
             andando = true;
             
         }
         
         // frente z+
         
-        if (Input.GetKey(KeyCode.D))
+        if (Input.GetKey(KeyCode.A))
         {
             posicao.z = posicao.z + velocidade * Time.deltaTime;   
-            transform.rotation = Quaternion.Euler(0, 90, 0);
+            transform.rotation = Quaternion.Euler(0, 180, 0);
             andando = true;
             
         }
         
         // trás z-
         
-        if (Input.GetKey(KeyCode.A))
+        if (Input.GetKey(KeyCode.D))
         {
             posicao.z = posicao.z - velocidade * Time.deltaTime;
-            transform.rotation = Quaternion.Euler(0, -90, 0);
+            transform.rotation = Quaternion.Euler(0, 0, 0);
             andando = true;
 
         }
